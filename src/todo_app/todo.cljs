@@ -1,7 +1,8 @@
-(ns todo_app.core
+(ns todo_app.todo
     (:require [reagent.core :as reagent :refer [atom]]))
 
 (enable-console-print!)
+
 
 ;; todo-item
 ;; 1/key

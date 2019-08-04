@@ -30,7 +30,7 @@
                            ;; Comment this out once it no longer serves you.
                            :open-urls ["http://localhost:3449/index.html"]}
 
-                :compiler {:main todo-app.core
+                :compiler {:main todo-app.todo
                            :asset-path "js/compiled/out"
                            :output-to "resources/public/js/compiled/todo_app.js"
                            :output-dir "resources/public/js/compiled/out"
@@ -44,7 +44,7 @@
                {:id "min"
                 :source-paths ["src"]
                 :compiler {:output-to "resources/public/js/compiled/todo_app.js"
-                           :main todo-app.core
+                           :main todo-app.todo
                            :optimizations :advanced
                            :pretty-print false}}]}
 
@@ -94,3 +94,4 @@
                    ;; need to add the compliled assets to the :clean-targets
                    :clean-targets ^{:protect false} ["resources/public/js/compiled"
                                                      :target-path]}})
+
